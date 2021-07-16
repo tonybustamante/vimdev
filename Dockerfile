@@ -33,5 +33,5 @@ RUN apt-get update && apt-get install -y \
 # Compile YouCompleteMe
 RUN python3 ~/.vim/bundle/YouCompleteMe/install.py --all
 
-ADD vim-cmake-boilerplate
+ADD vim-cmake-boilerplate /root/vim-cmake-boilerplate
 

@@ -10,7 +10,7 @@ Vim development environment for C/C++/Python/Go that runs in a docker container.
 
 ```sudo docker build --t vimdev .```
 
-3. Create promming project directory (if you dont already have one)
+3. Create programming projects directory (if you dont already have one)
 
 ```mkdir ~/my_projects```
 
@@ -34,7 +34,8 @@ cmake -DCMAKE_BUILD_TYPE=Release ../..
 ```
 
 4. Start vim from project root directory
-```cd /root/my_projects/new_project
+```
+cd /root/my_projects/new_project
 vim
 ```
 

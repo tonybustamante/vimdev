@@ -3,15 +3,19 @@ Vim development environment for C/C++/Python/Go that runs in a docker container.
 
 ## Setup/Installation
 1. Pull down Dockerfile and configurations
+
 ```sudo git clone https://github.com/bustanet/vimdev.git```
 
 2. Build Image
+
 ```sudo docker build --t vimdev .```
 
 3. Create promming project directory (if you dont already have one)
+
 ```mkdir ~/my_projects```
 
 4. Start container and mount your project directory
+
 ```sudo docker run -it --name vimdev -v ~/my_projects:/root/my_projects vimdev bash```
 
 ## Workflow (inside docker container)

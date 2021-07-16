@@ -20,34 +20,41 @@ Vim development environment for C/C++/Python/Go that runs in a docker container.
 
 ## Workflow (inside docker container)
 1. Copy contents of boilerplate directory to your project directory and move there
-```cp -r ../vimdev/vim-cmake-boilerplate/* /root/my_projects/new_project
-cd /root/my_projects/new_project```
+```
+cp -r ../vimdev/vim-cmake-boilerplate/* /root/my_projects/new_project
+cd /root/my_projects/new_project
+```
 
 2. Build cmake environment for both Debug and Release builds
-```cd ./build/Debug
+```
+cd ./build/Debug
 cmake -DCMAKE_BUILD_TYPE=Debug ../..
 cd ../Release
-cmake -DCMAKE_BUILD_TYPE=Release ../..```
+cmake -DCMAKE_BUILD_TYPE=Release ../..
+```
 
 4. Start vim from project root directory
 ```cd /root/my_projects/new_project
-vim```
+vim
+```
 
 5. Set name of binary file to compile when pressing <F6> or <F7>
-```:call SetBinaryRelease("Boilerplate") | call SetBinaryDebug("Boilerplate")
+```:call SetBinaryRelease("Boilerplate") | call SetBinaryDebug("Boilerplate")```
 
 6. Make changes to code (main.cpp or somethingelse)
 
 7. Commands
+```
 <C-m>bd #Compile for debug
 <C-m>br #build for release
 <F6>	# Runs debug build
 <F7>	# Runs release build
-
+```
 8. Other useful commands
+```
 <F2>	Toggle NERDTRee
 <F8> 	Toggle Tabbar
-
+```
 
 
 ## Features

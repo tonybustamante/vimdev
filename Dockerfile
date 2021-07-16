@@ -10,6 +10,7 @@ RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.v
 
 # Pull down our custom vimrc 
 COPY vimrc /root/.vimrc
+COPY tmux.conf /root/.tmux.conf
 
 # RUN [ /bin/bash, -c, vim -E -s -c source ~/.vimrc -c PluginInstall -c qa  ]
 # RUN vim -E -s -c source /home/tony/.vimrc  -c PluginInstall -c qa
@@ -31,3 +32,6 @@ RUN apt-get update && apt-get install -y \
 
 # Compile YouCompleteMe
 RUN python3 ~/.vim/bundle/YouCompleteMe/install.py --all
+
+ADD vim-cmake-boilerplate
+

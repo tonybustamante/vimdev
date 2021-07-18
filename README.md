@@ -25,12 +25,13 @@ cp -r ../vimdev/vim-cmake-boilerplate/* /root/my_projects/new_project
 cd /root/my_projects/new_project
 ```
 
-2. Build cmake environment for both Debug and Release builds
+2. Build cmake environment for both Debug and Release builds AND create symbolic link of compiler flags in root directory (as required by ycm)
 ```
 cd ./build/Debug
 cmake -DCMAKE_BUILD_TYPE=Debug ../..
 cd ../Release
 cmake -DCMAKE_BUILD_TYPE=Release ../..
+ln -s build/Debug/compile_commands.json compile_commands.json
 ```
 
 4. Start vim from project root directory

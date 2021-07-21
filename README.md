@@ -74,4 +74,7 @@ I had to update .tmux.conf with:
 Force tmux  to assume terminal supports 256 colors 
 ```tmux -2```
 
-
+## TODO
+add git config instructions
+make script to auto initialize the environment and drop you into vim
+add .gitignore to boilerplate

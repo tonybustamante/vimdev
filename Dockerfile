@@ -2,7 +2,7 @@ FROM ubuntu
 
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y --no-install-recommends tzdata
-RUN apt-get update && apt-get install -y curl git vim-nox pip fonts-powerline wget
+RUN apt-get update && apt-get install -y curl git vim-nox pip fonts-powerline wget ctags
 RUN python3 -m pip install powerline-status psutil i3ipc
 
 # Download Vundle package manager
@@ -22,7 +22,6 @@ RUN vim +PluginInstall +qall
 RUN apt-get update && apt-get install -y \
     build-essential \ 
     cmake \
-    vim-nox \
     python3-dev \
     mono-complete \
     golang \

@@ -253,3 +253,17 @@ set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set t_Co=256
+
+
+" Personal Customaizations (non standard)
+" --------------------------------------
+" Easy way to add a semicolon at the end of a line when coding in c/c++
+" Also useful when using auto pairs in order to jump to the end of the
+" line and add the required semicolon.
+nnoremap ;; $a;<ESC>
+
+" Quick and dirty way to compile and run the current c++ file
+" I use this when not using the above cmake and boilerplate c++
+" Dev environment. Gets overwritten with SetBinaryDegug() and 
+" SetBinaryReleasel Alternatively could remap to <F8) insetead
+map <F6> :w <CR> :!g++ % -o %< && clear && ./%< <CR>

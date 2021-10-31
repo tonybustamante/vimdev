@@ -72,6 +72,7 @@ vim
 2. Configure git settings
 
 ```git config --global user.name "FIRST_NAME LAST_NAME"```
+
 ```git config --global user.email "MY_NAME@example.com"```
 
 

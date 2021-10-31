@@ -16,9 +16,12 @@ Vim development environment for C/C++/Python/Go that runs in a docker container.
 
 4. Start container and mount your project directory
 
-```sudo docker run -it --name vimdev -v ~/my_projects:/root/my_projects -v ~/.ssh:/root/.ssh vimdev bash```
+```sudo docker run -it --name vimdev -v ~/Github:root/my_projects -v ~/.ssh:/root/.ssh vimdev bash```
 
-## Workflow (inside docker container)
+5. Access Container
+```sudo docker exec -it vimdev bash``` 
+
+## Starting a new Project (inside docker container)
 1. Copy contents of boilerplate directory to your project directory and move there
 ```
 cp -r ../vimdev/vim-cmake-boilerplate/* /root/my_projects/new_project

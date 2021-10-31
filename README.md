@@ -17,7 +17,7 @@ Vim development environment for C/C++/Python/Go that runs in a docker container.
 
 4. Start container and mount your project directory
 
-```sudo docker run -it --name vimdev -v ~/Github:/root/my_projects -v ~/.ssh:/root/.ssh 7aea40ec9708 bash```
+```sudo docker run -it --name vimdev -v ~/Github:/root/my_projects -v ~/.ssh:/root/.ssh vimdev bash```
 
 5. Access Container
 
@@ -64,6 +64,16 @@ vim
 <F2>	Toggle NERDTRee
 <F8> 	Toggle Tabbar
 ```
+## Other Settings 
+1. If you dont already have ssh keys in your ~/.ssh directory, you'll need to create them, either on the host machine or from the docker container. 
+
+```ssh-keygen -b 4096 -t rsa```
+
+2. Configure git settings
+
+```git config --global user.name "FIRST_NAME LAST_NAME"```
+```git config --global user.email "MY_NAME@example.com"```
+
 
 
 ## Features
@@ -85,5 +95,5 @@ Force tmux  to assume terminal supports 256 colors
 add git config instructions
 make script to auto initialize the environment and drop you into vim
 add .gitignore to boilerplate
-test
+
 

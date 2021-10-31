@@ -1,7 +1,8 @@
 # vimdev
 Vim development environment for C/C++/Python/Go that runs in a docker container.
 
-## Setup/Installation
+
+## Option 1a: Setup/Installation from source
 1. Pull down Dockerfile and configurations
 
 ```sudo git clone https://github.com/bustanet/vimdev.git```
@@ -16,10 +17,13 @@ Vim development environment for C/C++/Python/Go that runs in a docker container.
 
 4. Start container and mount your project directory
 
-```sudo docker run -it --name vimdev -v ~/Github:root/my_projects -v ~/.ssh:/root/.ssh vimdev bash```
+```sudo docker run -it --name vimdev -v ~/Github:/root/my_projects -v ~/.ssh:/root/.ssh 7aea40ec9708 bash```
 
 5. Access Container
+
 ```sudo docker exec -it vimdev bash``` 
+
+## Option 1b: Download Pre-Compiled Container
 
 ## Starting a new Project (inside docker container)
 1. Copy contents of boilerplate directory to your project directory and move there
@@ -81,3 +85,5 @@ Force tmux  to assume terminal supports 256 colors
 add git config instructions
 make script to auto initialize the environment and drop you into vim
 add .gitignore to boilerplate
+test
+

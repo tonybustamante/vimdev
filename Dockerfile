@@ -34,3 +34,4 @@ RUN python3 ~/.vim/bundle/YouCompleteMe/install.py --all
 
 ADD vim-cmake-boilerplate /root/vim-cmake-boilerplate
 
+RUN python3 -m pip install virtualenv

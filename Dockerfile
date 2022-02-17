@@ -3,7 +3,7 @@ FROM ubuntu
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y --no-install-recommends tzdata
 RUN apt-get update && apt-get install -y curl git vim-nox pip fonts-powerline wget ctags
-RUN python3 -m pip install powerline-status psutil i3ipc
+RUN python3 -m pip install powerline-status psutil i3ipc virtualenv
 
 # Download Vundle package manager
 RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

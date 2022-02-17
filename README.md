@@ -17,7 +17,7 @@ Vim development environment for C/C++/Python/Go that runs in a docker container.
 
 4. Start container and mount your project directory
 
-```sudo docker run -it --name vimdev -v ~/Github:/root/my_projects -v ~/.ssh:/root/.ssh vimdev bash```
+```sudo docker run -it -p 5000:5000 --name vimdev -v ~/Github:/root/my_projects -v ~/.ssh:/root/.ssh vimdev bash```
 
 5. Access Container
 

@@ -95,6 +95,9 @@ Force tmux  to assume terminal supports 256 colors
 ## TODO
 add git config instructions
 make script to auto initialize the environment and drop you into vim
+  - git config --global user.email "email"
+  - git config --gloabl user.name "name"
 add .gitignore to boilerplate
+
 
 

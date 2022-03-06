@@ -2,7 +2,7 @@ FROM ubuntu
 
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y --no-install-recommends tzdata
-RUN apt-get update && apt-get install -y curl git vim-nox pip fonts-powerline wget ctags
+RUN apt-get update && apt-get install -y curl git vim-nox pip fonts-powerline wget ctags sqlite3
 RUN python3 -m pip install powerline-status psutil i3ipc virtualenv
 
 # Download Vundle package manager
@@ -34,4 +34,3 @@ RUN python3 ~/.vim/bundle/YouCompleteMe/install.py --all
 
 ADD vim-cmake-boilerplate /root/vim-cmake-boilerplate
 
-RUN python3 -m pip install virtualenv

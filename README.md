@@ -100,4 +100,21 @@ make script to auto initialize the environment and drop you into vim
 add .gitignore to boilerplate
 
 
+Cheat Sheet
+cd ~
+apt-get update
+apt-get install pip
+pip install powerline-status
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/bustanet/vimdev.git
+cp vimdev/vimrc .vimrc
 
+vim +PluginInstall +qall
+#or
+#:PluginInstall #from inside vim
+
+
+# For YCM
+apt install build-essential cmake vim-nox python3-dev
+apt install mono-complete golang nodejs openjdk-17-jdk openjdk-17-jre npm
+python3 install.py --all --force-sudo

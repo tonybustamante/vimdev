@@ -2,7 +2,7 @@ FROM ubuntu
 
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y --no-install-recommends tzdata
-RUN apt-get update && apt-get install -y curl git vim-nox pip fonts-powerline wget ctags sqlite3
+RUN apt-get update && apt-get install -y curl git vim-nox pip fonts-powerline wget universal-ctags sqlite3
 RUN python3 -m pip install powerline-status psutil i3ipc virtualenv
 
 # Download Vundle package manager

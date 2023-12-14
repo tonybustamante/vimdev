@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y \
     npm
 
 # Compile YouCompleteMe
-RUN python3 ~/.vim/bundle/YouCompleteMe/install.py --all
+RUN python3 ~/.vim/bundle/YouCompleteMe/install.py --all --force-sudo
 
 ADD vim-cmake-boilerplate /root/vim-cmake-boilerplate
 

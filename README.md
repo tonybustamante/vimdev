@@ -9,7 +9,7 @@ Vim development environment for C/C++/Python/Go that runs in a docker container.
 
 2. Build Image
 
-```sudo docker build --t vimdev .```
+```sudo docker build -t vimdev .```
 
 3. Create programming projects directory (if you dont already have one)
 
@@ -17,7 +17,7 @@ Vim development environment for C/C++/Python/Go that runs in a docker container.
 
 4. Start container and mount your project directory
 
-```sudo docker run -itd -p 5000:5000 --name vimdev -v ~/Github:/root/my_projects -v ~/.ssh:/root/.ssh vimdev bash```
+```sudo docker run -itd -p 5000:5000 --name vimdev -v ~/Projects:/home/kali/Projects vimdev bash```
 
 5. Access Container
 
